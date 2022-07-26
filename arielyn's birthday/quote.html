@@ -1,0 +1,133 @@
+<html>
+<head>
+  <title> quote generator </title>
+    
+   <style>
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+    .intro{
+        text-align:center;
+    }
+
+    .navigation{
+      text-align:center;
+      font-family: 'Montserrat', sans-serif;
+      color:#576F72;
+    }
+    
+    h4{
+        color:#576F72;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+    
+    h5{
+        color:#576F72;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+       
+     h2{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+    
+       button{
+          font-family: 'Montserrat', sans-serif;
+       }
+       
+    h3{
+        color:#7D9D9C;
+        font-family: 'Ibarra Real Nova', serif;
+    }
+
+    body{
+        background-color:#F0EBE3;
+    }
+    
+    #output {
+    
+      font-family: 'Montserrat', sans-serif;
+      color:#576F72;
+    }
+       
+       .title{
+           text-align:center;
+       }
+  </style>
+</head>
+<body>
+    
+<header align = "center">
+<a href="index.html"><img src="https://fontmeme.com/permalink/220721/5b73c2aebf39086b1d93197f6e90b412.png" alt="handwriting-fonts" border="0"></a>
+</header>
+<hr>
+    
+<div class = "navigation">
+<nav>
+<table align = "center" cellspacing = "5" cellpadding = "5">
+<tr>
+<td> <a href = "index.html"> Home </a></td>
+<td> <a href = "letter.html"> Letter </a> </td>
+<td> <a href = "playlist.html"> Playlist </a> </td>
+<td> <a href = "generator.html"> Word Generator </a></td>
+<td> <a href = "quote.html"> Quote Generator </a></td>
+</tr> 
+</table>
+</nav>
+</div>
+
+<div class = "title">
+  <h1> quote generator </h1>
+  <img src = "https://64.media.tumblr.com/34fa74f67bc4ab2e3ba662e5e1a5d57d/d0a811ee178fe8e8-4d/s500x750/5ba3032fd673af5657e8434f9404308000d9ab41.gifv" width = "15%">
+  <h2> basically, just quotes that remind me of you :)) </h2>
+<h3> click the button and see what pops up! </h3>
+  <div class = "button">
+    <button> click me!! </button>
+  </div>
+  <div>
+   
+  
+
+  <div id="output"></div>
+
+  <script>
+   
+    var btn = document.querySelector("button");
+    var out = document.getElementById("output");
+    
+  
+    btn.addEventListener("click", getWord);
+   
+    function getWord(){
+     
+      
+      var theWord= [
+        'They may forget what you said, but they will never forget how you made them feel. — Unknown.',
+        'You are enough just as you are. — Meghan Markle.',
+        'To the world you may be just one person, but to one person you may be the world. — Dr. Seuss.',
+        'Let us be grateful to the people who make us happy; they are the charming gardeners who make our souls blossom. — Marcel Proust.',
+        'That’s when I realized what a true friend was. Someone who would always love you — the imperfect you, the confused you, the wrong you — because that is what people are supposed to do. — Unknown.',
+        'It’s not what we have in life, but who we have in our life that matters. — Unknown.',
+        'Growing apart doesn’t change the fact that for a long time we grew side by side; our roots will always be tangled. I’m glad for that. — Ally Condie.',
+        'In the sweetness of friendship let there be laughter, for in the dew of little things the heart finds its morning and is refreshed. — Khalil Gibran.',
+        'She looked like art with a bit of poetry with a touch of magic. Everything that made you feel something. —Ventum.',
+       
+      ];
+
+      
+      var wordNum = Math.floor(Math.random() * theWord.length);
+      
+     
+      output.textContent = theWord[wordNum];
+    }
+</script>
+<br>
+<h5> eifahaif, i hope you liked this one :)) </h5>
+    </div>
+    </div>
+    </body>
